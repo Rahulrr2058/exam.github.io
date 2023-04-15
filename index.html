@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Hey Madam!</title>
+<style>
+p {
+text-align: center;
+font-size: 32px;
+font-family: Candara, Oswald;
+}
+img {
+display: block;
+margin: 0 auto;
+width: 25%;
+height:50%;
+}
+</style>
+</head>
+<body>
+<p>Are you in good mood for exam?</p>
+<img src="https://static5.depositphotos.com/1000270/486/i/600/depositphotos_4869272-stock-photo-bengal-cat-light-brown-cream.jpg">
+</body>
+<title>Botões</title>
+<style>
+#botao1 {
+position: fixed;
+top: 70%;
+left: 55%;
+transform: translate(-50%, -50%);
+}
+#botao2 {
+position: absolute;
+ left: 39%;
+  top: 68%;
+}
+</style>
+</head>
+<body>
+<button id="botao1">YES SIR!</button>
+<button id="botao2">NO</button>
+<script>
+const button2 = document.getElementById('botao2');
+let left = 40;
+button2.addEventListener('mouseover', function() {
+  if(left == 40){
+    left = 44;
+  }else if(left == 44){
+    left = 36;
+  }else if(left == 36){
+    left = 32;
+  }else{
+    left = 40
+  }
+  this.style.left = left + '%';
+});
+
+</script>
+<script>document.getElementById('botao1').addEventListener('click', function() {
+alert('YAYY ALL THE BEST FOR YOUR EXAM 😍❤️');
+});
+</script>
+</body>
+</html>
